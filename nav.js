@@ -16,6 +16,10 @@ $(".toggle_group").each(function() {
   });
 });
 
+$(".menu .closeButton").click(function() {
+    $("body").toggleClass("open");
+  });
+
 $("html").click(function() {
   $(".hotSpot_toggle").hide();
 });
