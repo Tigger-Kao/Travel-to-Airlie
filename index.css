@@ -1332,26 +1332,26 @@ footer p {
     font-weight: 300;
   }
   #activity .container #mobileAct .firstPage h4::before {
-    content: "";
-    width: 60px;
-    height: 1px;
+    content: "⇦";
+    width: 0px;
+    height: 0px;
     background-color: #fff;
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: -80%;
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #activity .container #mobileAct .firstPage h4::after {
-    content: "";
-    width: 60px;
-    height: 1px;
+    content: "⇨";
+    width: 0px;
+    height: 0px;
     background-color: #fff;
     position: absolute;
-    top: 50%;
-    right: -80%;
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
+    top: 0%;
+    right: -65%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #activity .container #mobileAct .scenicFlight {
     width: 100%;
@@ -1381,6 +1381,29 @@ footer p {
   #activity .container #mobileAct .scenicFlight .subject h4 {
     font-size: 24px;
     font-weight: 300;
+    position: relative;
+  }
+  #activity .container #mobileAct .scenicFlight .subject h4::before {
+    content: "⇦";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: -70%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #activity .container #mobileAct .scenicFlight .subject h4::after {
+    content: "⇨";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    right: -55%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #activity .container #mobileAct .scenicFlight .subject p {
     color: whitesmoke;
@@ -1421,6 +1444,29 @@ footer p {
   #activity .container #mobileAct .boat .subject h4 {
     font-size: 24px;
     font-weight: 300;
+    position: relative;
+  }
+  #activity .container #mobileAct .boat .subject h4::before {
+    content: "⇦";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: -60%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #activity .container #mobileAct .boat .subject h4::after {
+    content: "⇨";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    right: -45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #activity .container #mobileAct .boat .subject p {
     color: whitesmoke;
@@ -1461,6 +1507,29 @@ footer p {
   #activity .container #mobileAct .sailing .subject h4 {
     font-size: 24px;
     font-weight: 300;
+    position: relative;
+  }
+  #activity .container #mobileAct .sailing .subject h4::before {
+    content: "⇦";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: -80%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #activity .container #mobileAct .sailing .subject h4::after {
+    content: "⇨";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    right: -65%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #activity .container #mobileAct .sailing .subject p {
     color: whitesmoke;
@@ -1501,6 +1570,29 @@ footer p {
   #activity .container #mobileAct .skydive .subject h4 {
     font-size: 24px;
     font-weight: 300;
+    position: relative;
+  }
+  #activity .container #mobileAct .skydive .subject h4::before {
+    content: "⇦";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #activity .container #mobileAct .skydive .subject h4::after {
+    content: "⇨";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    right: -85%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #activity .container #mobileAct .skydive .subject p {
     color: whitesmoke;
@@ -1541,6 +1633,29 @@ footer p {
   #activity .container #mobileAct .jetski .subject h4 {
     font-size: 24px;
     font-weight: 300;
+    position: relative;
+  }
+  #activity .container #mobileAct .jetski .subject h4::before {
+    content: "⇦";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: -65%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #activity .container #mobileAct .jetski .subject h4::after {
+    content: "⇨";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    right: -45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #activity .container #mobileAct .jetski .subject p {
     color: whitesmoke;
@@ -1581,6 +1696,29 @@ footer p {
   #activity .container #mobileAct .scuba .subject h4 {
     font-size: 24px;
     font-weight: 300;
+    position: relative;
+  }
+  #activity .container #mobileAct .scuba .subject h4::before {
+    content: "⇦";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    left: -60%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  #activity .container #mobileAct .scuba .subject h4::after {
+    content: "⇨";
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+    position: absolute;
+    top: 0%;
+    right: -45%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #activity .container #mobileAct .scuba .subject p {
     color: whitesmoke;
@@ -1696,6 +1834,7 @@ footer p {
   #transfer .transfer_container #mobilePart .modal-window:target {
     opacity: 1;
     pointer-events: auto;
+    overflow: scroll;
   }
   #transfer .transfer_container #mobilePart .modal-window > div {
     width: 100%;

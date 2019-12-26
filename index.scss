@@ -1440,25 +1440,25 @@ footer {
             font-weight: 300;
 
             &::before {
-              content: "";
-              width: 60px;
-              height: 1px;
+              content: "⇦";
+              width: 0px;
+              height: 0px;
               background-color: #fff;
               position: absolute;
-              top: 50%;
+              top: 0%;
               left: -80%;
-              transform: translate(0%, -50%);
+              transform: translate(-50%, -50%);
             }
 
             &::after {
-              content: "";
-              width: 60px;
-              height: 1px;
+              content: "⇨";
+              width: 0px;
+              height: 0px;
               background-color: #fff;
               position: absolute;
-              top: 50%;
-              right: -80%;
-              transform: translate(0%, -50%);
+              top: 0%;
+              right: -65%;
+              transform: translate(-50%, -50%);
             }
           }
         }
@@ -1481,6 +1481,29 @@ footer {
             h4 {
               font-size: 24px;
               font-weight: 300;
+              position: relative;
+
+              &::before {
+                content: "⇦";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                left: -70%;
+                transform: translate(-50%, -50%);
+              }
+  
+              &::after {
+                content: "⇨";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                right: -55%;
+                transform: translate(-50%, -50%);
+              }
             }
             p {
               color: whitesmoke;
@@ -1515,6 +1538,30 @@ footer {
             h4 {
               font-size: 24px;
               font-weight: 300;
+
+              position: relative;
+
+              &::before {
+                content: "⇦";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                left: -60%;
+                transform: translate(-50%, -50%);
+              }
+  
+              &::after {
+                content: "⇨";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                right: -45%;
+                transform: translate(-50%, -50%);
+              }
             }
             p {
               color: whitesmoke;
@@ -1549,6 +1596,30 @@ footer {
             h4 {
               font-size: 24px;
               font-weight: 300;
+
+              position: relative;
+
+              &::before {
+                content: "⇦";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                left: -80%;
+                transform: translate(-50%, -50%);
+              }
+  
+              &::after {
+                content: "⇨";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                right: -65%;
+                transform: translate(-50%, -50%);
+              }
             }
             p {
               color: whitesmoke;
@@ -1583,6 +1654,29 @@ footer {
             h4 {
               font-size: 24px;
               font-weight: 300;
+              position: relative;
+
+              &::before {
+                content: "⇦";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                left: -100%;
+                transform: translate(-50%, -50%);
+              }
+  
+              &::after {
+                content: "⇨";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                right: -85%;
+                transform: translate(-50%, -50%);
+              }
             }
             p {
               color: whitesmoke;
@@ -1617,6 +1711,29 @@ footer {
             h4 {
               font-size: 24px;
               font-weight: 300;
+              position: relative;
+
+              &::before {
+                content: "⇦";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                left: -65%;
+                transform: translate(-50%, -50%);
+              }
+  
+              &::after {
+                content: "⇨";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                right: -45%;
+                transform: translate(-50%, -50%);
+              }
             }
             p {
               color: whitesmoke;
@@ -1651,6 +1768,29 @@ footer {
             h4 {
               font-size: 24px;
               font-weight: 300;
+              position: relative;
+
+              &::before {
+                content: "⇦";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                left: -60%;
+                transform: translate(-50%, -50%);
+              }
+  
+              &::after {
+                content: "⇨";
+                width: 0px;
+                height: 0px;
+                background-color: #fff;
+                position: absolute;
+                top: 0%;
+                right: -45%;
+                transform: translate(-50%, -50%);
+              }
             }
             p {
               color: whitesmoke;
@@ -1786,7 +1926,7 @@ footer {
           &:target {
             // visibility: visible;
             opacity: 1;
-            pointer-events: auto;
+            pointer-events: auto;overflow: scroll;
           }
           & > div {
             width: 100%;
