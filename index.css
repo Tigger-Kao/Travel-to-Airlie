@@ -49,6 +49,20 @@ h4 {
   overflow-x: hidden;
 }
 
+.container .backImg .mobile_logo {
+  display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: fixed;
+  left: 50%;
+  top: 4%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 9999;
+  color: white;
+}
+
 .container .backImg #banner {
   width: 100%;
   height: 100vh;
@@ -312,6 +326,10 @@ h4 {
   background-image: url(./img/Scuba-Diving-in-South-Caicos.jpg);
   background-size: cover;
   background-position: center;
+}
+
+#activity .container #mobileAct {
+  display: none;
 }
 
 #activity .container .lightBox {
@@ -847,6 +865,10 @@ h4 {
   display: block;
 }
 
+#transfer .transfer_container #mobilePart {
+  display: none;
+}
+
 #sitemap .title {
   display: none;
 }
@@ -1244,6 +1266,9 @@ footer p {
     font-size: 14px;
     font-weight: 300;
   }
+  .container .backImg .mobile_logo {
+    display: unset;
+  }
   .container .backImg #banner .title {
     top: 50%;
     left: 45%;
@@ -1280,6 +1305,293 @@ footer p {
   }
   #hotSpot .container .imgContent .img .circle .text {
     font-size: 20px;
+  }
+  #activity .container {
+    height: 100vh;
+  }
+  #activity .container #allActivity {
+    display: none;
+  }
+  #activity .container #mobileAct {
+    display: unset;
+  }
+  #activity .container #mobileAct .firstPage {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/199682191_17effb0b98_b.jpg);
+    background-size: cover;
+    position: relative;
+  }
+  #activity .container #mobileAct .firstPage h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 300;
+  }
+  #activity .container #mobileAct .firstPage h4::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: -80%;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  #activity .container #mobileAct .firstPage h4::after {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: -80%;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  #activity .container #mobileAct .scenicFlight {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/16509652065_a40110ee18_k.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #activity .container #mobileAct .scenicFlight .subject {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+  }
+  #activity .container #mobileAct .scenicFlight .subject h4 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  #activity .container #mobileAct .scenicFlight .subject p {
+    color: whitesmoke;
+    margin-top: 0;
+  }
+  #activity .container #mobileAct .scenicFlight .detail {
+    text-align: center;
+    bottom: 0;
+    color: whitesmoke;
+    background-color: rgba(21, 34, 46, 0.658);
+    padding-bottom: 30px;
+  }
+  #activity .container #mobileAct .boat {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/cruise-whitsundays-activity-platform.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #activity .container #mobileAct .boat .subject {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+  }
+  #activity .container #mobileAct .boat .subject h4 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  #activity .container #mobileAct .boat .subject p {
+    color: whitesmoke;
+    margin-top: 0;
+  }
+  #activity .container #mobileAct .boat .detail {
+    text-align: center;
+    bottom: 0;
+    color: whitesmoke;
+    background-color: rgba(21, 34, 46, 0.658);
+    padding-bottom: 30px;
+  }
+  #activity .container #mobileAct .sailing {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/Whitsundays-Sailing-Boat.jpg);
+    background-size: cover;
+    background-position-y: 30%;
+    background-position-x: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #activity .container #mobileAct .sailing .subject {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+  }
+  #activity .container #mobileAct .sailing .subject h4 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  #activity .container #mobileAct .sailing .subject p {
+    color: whitesmoke;
+    margin-top: 0;
+  }
+  #activity .container #mobileAct .sailing .detail {
+    text-align: center;
+    bottom: 0;
+    color: whitesmoke;
+    background-color: rgba(21, 34, 46, 0.658);
+    padding-bottom: 30px;
+  }
+  #activity .container #mobileAct .skydive {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/parachutist-4328175_960_720.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #activity .container #mobileAct .skydive .subject {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+  }
+  #activity .container #mobileAct .skydive .subject h4 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  #activity .container #mobileAct .skydive .subject p {
+    color: whitesmoke;
+    margin-top: 0;
+  }
+  #activity .container #mobileAct .skydive .detail {
+    text-align: center;
+    bottom: 0;
+    color: whitesmoke;
+    background-color: rgba(21, 34, 46, 0.658);
+    padding-bottom: 30px;
+  }
+  #activity .container #mobileAct .jetski {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/jetski.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #activity .container #mobileAct .jetski .subject {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+  }
+  #activity .container #mobileAct .jetski .subject h4 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  #activity .container #mobileAct .jetski .subject p {
+    color: whitesmoke;
+    margin-top: 0;
+  }
+  #activity .container #mobileAct .jetski .detail {
+    text-align: center;
+    bottom: 0;
+    color: whitesmoke;
+    background-color: rgba(21, 34, 46, 0.658);
+    padding-bottom: 30px;
+  }
+  #activity .container #mobileAct .scuba {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/3-02262.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #activity .container #mobileAct .scuba .subject {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 20px;
+  }
+  #activity .container #mobileAct .scuba .subject h4 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+  #activity .container #mobileAct .scuba .subject p {
+    color: whitesmoke;
+    margin-top: 0;
+  }
+  #activity .container #mobileAct .scuba .detail {
+    text-align: center;
+    bottom: 0;
+    color: whitesmoke;
+    background-color: rgba(21, 34, 46, 0.658);
+    padding-bottom: 30px;
   }
   #food .container .title {
     text-align: left;
@@ -1336,95 +1648,96 @@ footer p {
     background-color: #0a6180;
   }
   #transfer .transfer_container .content {
-    display: unset;
-    font-size: 16px;
+    display: none;
   }
-  #transfer .transfer_container .content .leftSide {
+  #transfer .transfer_container #mobilePart {
+    display: unset;
+  }
+  #transfer .transfer_container #mobilePart .buttons {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  #transfer .transfer_container .content .leftSide .tab {
-    margin: 0;
-    height: 150px;
+  #transfer .transfer_container #mobilePart .buttons .tab {
+    width: 50%;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #15244c;
   }
-  #transfer .transfer_container .content .leftSide .plane {
-    background-color: #0a6180;
+  #transfer .transfer_container #mobilePart .buttons .tab .fas {
+    width: 100%;
+    color: white;
+  }
+  #transfer .transfer_container #mobilePart .buttons .train {
+    background-color: #1a83c5;
+  }
+  #transfer .transfer_container #mobilePart .buttons .bus {
+    background-color: #1a83c5;
+  }
+  #transfer .transfer_container #mobilePart .modal-window {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #transfer .transfer_container #mobilePart .modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #transfer .transfer_container #mobilePart .modal-window > div {
+    width: 100%;
+    min-height: 100vh;
+    padding: 2em;
+    background: #15222e;
+  }
+  #transfer .transfer_container #mobilePart .modal-window .textarea {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  #transfer .transfer_container #mobilePart .modal-window .textarea h4 {
     position: relative;
+    margin-bottom: 14px;
+    font-size: 16px;
   }
-  #transfer .transfer_container .content .leftSide .plane i {
+  #transfer .transfer_container #mobilePart .modal-window .textarea h4::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: whitesmoke;
+    border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    left: -10%;
+    top: 8%;
   }
-  #transfer .transfer_container .content .leftSide .plane.active {
-    -webkit-transform: unset;
-            transform: unset;
+  #transfer .transfer_container #mobilePart .modal-window .textarea p {
+    text-align: justify;
+    color: whitesmoke;
   }
-  #transfer .transfer_container .content .leftSide .plane.active::after {
-    display: none;
-  }
-  #transfer .transfer_container .content .leftSide .train {
-    background-color: #0a6180b4;
-    position: relative;
-  }
-  #transfer .transfer_container .content .leftSide .train i {
+  #transfer .transfer_container #mobilePart .modal-close {
+    color: #aaa;
+    line-height: 60px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 60px;
   }
-  #transfer .transfer_container .content .leftSide .train.active {
-    -webkit-transform: unset;
-            transform: unset;
-  }
-  #transfer .transfer_container .content .leftSide .train.active::after {
-    display: none;
-  }
-  #transfer .transfer_container .content .leftSide .bus {
-    background-color: #0a6180b4;
-    position: relative;
-  }
-  #transfer .transfer_container .content .leftSide .bus i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  #transfer .transfer_container .content .leftSide .bus.active {
-    -webkit-transform: unset;
-            transform: unset;
-  }
-  #transfer .transfer_container .content .leftSide .bus.active::after {
-    display: none;
-  }
-  #transfer .transfer_container .content .leftSide .taxi {
-    background-color: #0a6180;
-    position: relative;
-  }
-  #transfer .transfer_container .content .leftSide .taxi i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  #transfer .transfer_container .content .leftSide .taxi.active {
-    -webkit-transform: unset;
-            transform: unset;
-  }
-  #transfer .transfer_container .content .leftSide .taxi.active::after {
-    display: none;
-  }
-  #transfer .transfer_container .content .rightSide {
-    display: none;
+  #transfer .transfer_container #mobilePart .modal-close:hover {
+    color: black;
   }
   #sitemap {
     margin-top: 30px;

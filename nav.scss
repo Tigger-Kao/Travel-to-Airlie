@@ -44,7 +44,7 @@ ul {
     background-color: rgb(32, 43, 48);
     position: fixed;
     z-index: 2000;
-
+    
     .menu {
         .menu-toggle {
             opacity: 0.6;
@@ -255,6 +255,11 @@ ul {
         }
     }
 
+.menu.scrolled {
+        background-color: rgba(255, 255, 255, 0.753) !important;
+        transition: background-color 1000ms linear;
+      }
+
     .tips {
         padding-top: 30px;
 
@@ -323,4 +328,21 @@ ul {
         }
     }
 
+}
+
+@media (max-width: 420px){
+    ul{
+        li{
+            font-size: 24px;
+        }
+    }
+    .navBar{
+        .menu{
+            .menu-toggle{
+                width: 36px;
+                height: 24px;
+            }
+        }
+    }
+    
 }

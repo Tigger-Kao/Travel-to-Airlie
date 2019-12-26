@@ -24,3 +24,4 @@ $("html").click(function() {
   $(".hotSpot_toggle").hide();
 });
 
+

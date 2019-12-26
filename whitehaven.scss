@@ -55,10 +55,11 @@ nav {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    flex-grow: 1;
+    justify-content: space-evenly;
     padding-top: 30px;
     padding-bottom: 30px;
-    position: fixed; 
+    position: fixed;
     transition: top 1s; /* Transition effect when sliding down (and up) */
 
     .page {
@@ -76,6 +77,10 @@ nav {
         background-color: rgba(255, 255, 255, 0.63);
       }
     }
+
+    .mobile_button{
+      display: none;
+    }
   }
 
   #navBar.scrolled {
@@ -84,42 +89,42 @@ nav {
   }
 }
 
-  // Go Index
-  #home {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: #004f77;
-    position: fixed;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    right: 5%;
-    bottom: 7%;
-    opacity: 0.4;
-    transition: 0.5s;
-    z-index: 99;
+// Go Index
+#home {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #004f77;
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  right: 5%;
+  bottom: 7%;
+  opacity: 0.4;
+  transition: 0.5s;
+  z-index: 99;
 
-    &::after {
-      content: "HOME";
-      font-size: 10px;
-      width: 0;
-      height: 0;
-      color: white;
-      position: absolute;
-      top: 60%;
-      left: 25%;
-    }
-  
-    i {
-      transform: translate(25%, -25%);
-      position: relative;
-    }
-  
-    &:hover {
-      opacity: 1;
-    }
+  &::after {
+    content: "HOME";
+    font-size: 10px;
+    width: 0;
+    height: 0;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 25%;
   }
+
+  i {
+    transform: translate(25%, -25%);
+    position: relative;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
 
 // Banner
 #banner {
@@ -272,7 +277,7 @@ nav {
 
           .address {
             padding: 20px;
-            h4{
+            h4 {
               color: black;
               font-size: 24px;
             }
@@ -311,12 +316,288 @@ nav {
 // Footer
 footer {
   width: 100%;
-  background-color:  #004f77;
+  background-color: #004f77;
   text-align: center;
 
   p {
     color: white;
     margin: 0;
     padding: 20px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  #sitemap {
+    .container {
+      height: 30vh;
+
+      .leftSide {
+        .link {
+          margin-left: 150px;
+        }
+      }
+
+      .rightSide {
+        .info {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin: 30px 0;
+  }
+
+  nav {
+    #navBar {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .logo {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  #banner {
+    .container {
+      .title {
+        top: 60%;
+      }
+    }
+  }
+
+  .section_1 {
+    .container {
+      .row {
+        width: 85%;
+        margin-top: 100px;
+
+        .imgSide {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .section_3 {
+    .container {
+      .row {
+        margin-top: 100px;
+      }
+    }
+  }
+
+  .section_3 {
+    .container {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      .row {
+        width: 85%;
+        .imgSide {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  #sitemap {
+    .container {
+      width: 100%;
+      margin: auto;
+      height: 35vh;
+
+      .leftSide {
+        width: 50%;
+        .link {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+      .rightSide {
+        width: 45%;
+
+        .info {
+          width: 100%;
+          .row {
+            .address {
+              h4 {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  h1{
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  h2{
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  h3{
+    font-size: 16px;
+    letter-spacing: 0px;
+  }
+
+  nav {
+    #navBar {
+      padding: 0;
+      align-items: center;
+      .logo{
+        padding: 0;
+      }
+
+      .page {
+        display: none;
+      }
+      .mobile_button{
+        display: unset;
+        text-align: center;
+        P{
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  #home{
+    width: 54px;
+    height: 54px;
+
+    &::after{
+      top: 55%;
+    left: 15%;
+    }
+    i{
+      font-size: 24px;
+      transform: translate(25%, -32%);
+    }
+  }
+
+  #banner {
+    .container {
+      background-size: cover;
+      background-position-x: 80%;
+
+    }
+  }
+
+  .section_1{
+    .container{
+      .row{
+        margin-top: 50px;
+        flex-wrap: wrap;
+        .imgSide{
+          width: 100%;
+          order: 3;
+        }
+        .textSide{
+          width: 100%;
+          order: 1;
+        }
+      }
+    }
+  }
+
+  .section_2{
+    .container{
+      display: none;
+    }
+  }
+
+  .section_3{
+    .container{
+      .row{
+        margin-top: 50px;
+        flex-wrap: wrap;
+        .imgSide{
+          width: 100%;
+          order: 3;
+        }
+        .textSide{
+          width: 100%;
+          order: 1;
+        }
+      }
+    }
+  }
+
+  #sitemap {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: lightgray;
+
+    .title {
+      display: unset;
+
+      h2 {
+        background-color: #0a6180;
+      }
+    }
+    .container {
+      height: auto;
+      width: 80%;
+      display: unset;
+
+      .leftSide {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 20px;
+        .link {
+          text-align: unset;
+          width: 100%;
+          .row {
+            width: fit-content;
+            margin: auto;
+          }
+        }
+      }
+
+      .rightSide {
+        width: 90%;
+        margin: auto;
+        .info {
+          .row {
+            .address {
+              padding: 10px 15px;
+              h4 {
+                margin: 10px 0;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+          .socialmedia {
+            padding: 10px;
+            .fab {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    p {
+      padding: 10px;
+    }
   }
 }

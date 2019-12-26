@@ -353,6 +353,12 @@ ul li {
   }
 }
 
+.navBar .menu.scrolled {
+  background-color: rgba(255, 255, 255, 0.753) !important;
+  -webkit-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
 .navBar .tips {
   padding-top: 30px;
 }
@@ -415,6 +421,16 @@ ul li {
   }
   .navBar .tips {
     display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  ul li {
+    font-size: 24px;
+  }
+  .navBar .menu .menu-toggle {
+    width: 36px;
+    height: 24px;
   }
 }
 /*# sourceMappingURL=nav.css.map */
