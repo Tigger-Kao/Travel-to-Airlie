@@ -355,7 +355,7 @@ footer p {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1017px) {
   h1 {
     font-size: 36px;
   }
@@ -416,7 +416,7 @@ footer p {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 729px) {
   h1 {
     font-size: 24px;
     letter-spacing: 1px;

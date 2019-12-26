@@ -1233,7 +1233,7 @@ footer p {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
   h1 {
     font-size: 28px;
     text-shadow: 0.05em 0.05em 0.2em #15222e;

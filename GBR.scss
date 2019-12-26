@@ -62,8 +62,6 @@ nav {
     position: fixed;
     transition: top 1s; /* Transition effect when sliding down (and up) */
 
-
-
     .page {
       background-color: rgba(255, 255, 255, 0);
       border: 1px solid white;
@@ -78,6 +76,10 @@ nav {
       &:hover {
         background-color: rgba(255, 255, 255, 0.63);
       }
+    }
+
+    .mobile_button{
+      display: none;
     }
   }
 
@@ -371,7 +373,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1017px) {
   h1 {
     font-size: 36px;
   }
@@ -449,7 +451,7 @@ footer {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 729px) {
   h1 {
     font-size: 24px;
     letter-spacing: 1px;

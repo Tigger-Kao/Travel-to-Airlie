@@ -64,9 +64,9 @@ $slickEl_hostle.on("init reInit afterChange", function(
 $slickEl.slick({
   centerMode: true,
   slidesToShow: 3,
+  slidesToScroll: 2,
   focusOnSelect: true,
   dots: false,
-  infinite: false,
   nextArrow: $(".next"),
   prevArrow: $(".prev"),
   responsive: [
@@ -96,7 +96,6 @@ $slickEl_hostle.slick({
   slidesToShow: 3,
   focusOnSelect: true,
   dots: false,
-  infinite: false,
   nextArrow: $(".next_b"),
   prevArrow: $(".prev_b"),
   responsive: [
