@@ -1,3 +1,6 @@
+$main: rgb(32, 43, 48);
+$second:rgb(66, 127, 151);
+
 * {
   font-family: "微軟正黑體";
   box-sizing: border-box;
@@ -23,7 +26,7 @@ h1 {
   font-size: 45px;
   letter-spacing: 4px;
   margin: 10px 0;
-  text-shadow: 0.1em 0.1em 0.05em black;
+  text-shadow: 0.1em 0.1em 0.05em $main;
 }
 
 h2 {
@@ -87,14 +90,14 @@ nav {
     background-color: rgba(255, 255, 255, 0.753) !important;
     transition: background-color 1000ms linear;
     .page {
-      color: #004f77;
-      border: 1px solid #004f77;
+      color: $main;
+      border: 1px solid $main;
     }
     .en {
-      color: #004f77;
+      color: $main;
     }
     .mobile_button p{
-      color: #004f77;
+      color: $main;
     }
   }
 }
@@ -104,7 +107,7 @@ nav {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: #004f77;
+  background-color: $second;
   position: fixed;
   display: flex;
   flex-flow: column;
@@ -257,10 +260,14 @@ nav {
         margin-left: 200px;
         text-align: center;
         a {
-          color: black;
+          color: #333333;
           font-size: 20px;
           line-height: 50px;
           font-weight: 600;
+
+          &:hover{
+            color: $second;
+          }
         }
       }
     }
@@ -271,7 +278,7 @@ nav {
 
       .info {
         width: 60%;
-        border: 2px black solid;
+        border: 2px #333333 solid;
         margin-right: auto;
         .row {
           width: 100%;
@@ -279,14 +286,14 @@ nav {
 
           .logo {
             width: 50%;
-            border-right: solid black 2px;
-            background-color: #004f77;
+            border-right: solid #333333 2px;
+            background-color: $second;
             display: flex;
             padding: 10px;
             box-sizing: border-box;
 
             img {
-              width: 70%;
+              // width: 70%;
               margin: auto;
             }
           }
@@ -294,13 +301,13 @@ nav {
           .address {
             padding: 20px;
             h4 {
-              color: black;
+              color: #333333;
               font-size: 24px;
             }
           }
         }
         .socialmedia {
-          border-top: black solid 2px;
+          border-top: #333333 solid 2px;
           display: flex;
           justify-content: space-evenly;
           align-items: center;
@@ -332,7 +339,7 @@ nav {
 // Footer
 footer {
   width: 100%;
-  background-color: #004f77;
+  background-color: $second;
   text-align: center;
 
   p {
@@ -553,7 +560,7 @@ footer {
       display: unset;
 
       h2 {
-        background-color: #0a6180;
+        background-color: $second;
       }
     }
     .container {

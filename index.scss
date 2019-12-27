@@ -1,3 +1,6 @@
+$main: rgb(32, 43, 48);
+$second:rgb(66, 127, 151);
+
 h1 {
   font-size: 50px;
   color: white;
@@ -25,10 +28,6 @@ h4 {
   color: white;
   margin: 0;
 }
-
-// html {
-//     box-sizing: border-box;
-// }
 
 *,
 *:before,
@@ -102,7 +101,7 @@ h4 {
 
         img {
           width: 90%;
-          box-shadow: 10px 5px 5px rgb(21, 34, 46);
+          box-shadow: 10px 5px 5px $main;
         }
       }
 
@@ -110,6 +109,11 @@ h4 {
         width: 30%;
         margin-right: 150px;
         text-align: justify;
+
+        p{
+          color: #333333;
+          font-weight: 400;
+        }
 
         .mobileText {
           display: none;
@@ -203,7 +207,7 @@ h4 {
     // background-image: url(./img/Artboard.png);
     // background-size: cover;
     // background-position: center;
-    background-color: rgb(21, 34, 46);
+    background-color: $main;
     position: relative;
 
     &.opacity {
@@ -494,7 +498,7 @@ h4 {
 
         &::after {
           content: "";
-          width: 450px;
+          width: 150%;
           height: 380px;
           background-color: rgb(245, 199, 169);
           position: absolute;
@@ -673,7 +677,7 @@ h4 {
 
         &::after {
           content: "";
-          width: 450px;
+          width: 150%;
           height: 380px;
           background-color: rgb(171, 196, 140);
           position: absolute;
@@ -692,7 +696,7 @@ h4 {
     width: 100%;
     min-height: 100vh;
     padding-top: 50px;
-    background-color: rgb(21, 34, 46);
+    background-color: $main;
     // background-image: url(./img/Artboard.png);
     box-sizing: border-box;
 
@@ -839,11 +843,15 @@ h4 {
         margin-left: 300px;
         text-align: center;
         a {
-          color: black;
+          color: #333333;
           font-size: 20px;
           line-height: 50px;
           font-weight: 600;
           padding: 0 10px;
+
+          &:hover{
+            color: $second;
+          }
         }
       }
     }
@@ -853,7 +861,7 @@ h4 {
       box-sizing: border-box;
       .info {
         width: 60%;
-        border: 2px black solid;
+        border: 2px #333333 solid;
         margin: auto;
         .row {
           width: 100%;
@@ -861,14 +869,14 @@ h4 {
 
           .logo {
             width: 50%;
-            border-right: solid black 2px;
-            background-color: #004f77;
+            border-right: solid #333333 2px;
+            background-color: $second;
             display: flex;
             padding: 10px;
             box-sizing: border-box;
 
             img {
-              width: 70%;
+              // width: 70%;
               margin: auto;
             }
           }
@@ -876,13 +884,13 @@ h4 {
           .address {
             padding: 20px;
             h4 {
-              color: black;
+              color: #333333;
               font-size: 24px;
             }
           }
         }
         .socialmedia {
-          border-top: black solid 2px;
+          border-top: #333333 solid 2px;
           display: flex;
           justify-content: space-evenly;
           align-items: center;
@@ -914,7 +922,7 @@ h4 {
 // Footer
 footer {
   width: 100%;
-  background-color: #004f77;
+  background-color: $second;
   text-align: center;
 
   p {
@@ -1933,7 +1941,6 @@ footer {
             min-height: 100vh;
             padding: 2em;
             background: rgb(21, 34, 46);
-
           }
 
           .textarea {

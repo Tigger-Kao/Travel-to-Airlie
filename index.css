@@ -107,14 +107,19 @@ h4 {
 
 .container .backImg #intro .img img {
   width: 90%;
-  -webkit-box-shadow: 10px 5px 5px #15222e;
-          box-shadow: 10px 5px 5px #15222e;
+  -webkit-box-shadow: 10px 5px 5px #202b30;
+          box-shadow: 10px 5px 5px #202b30;
 }
 
 .container .backImg #intro article {
   width: 30%;
   margin-right: 150px;
   text-align: justify;
+}
+
+.container .backImg #intro article p {
+  color: #333333;
+  font-weight: 400;
 }
 
 .container .backImg #intro article .mobileText {
@@ -207,7 +212,7 @@ h4 {
 #activity .container {
   width: 100%;
   height: 100vh;
-  background-color: #15222e;
+  background-color: #202b30;
   position: relative;
 }
 
@@ -529,7 +534,7 @@ h4 {
 
 #food .container .foodContent .leftSide::after {
   content: "";
-  width: 450px;
+  width: 150%;
   height: 380px;
   background-color: #f5c7a9;
   position: absolute;
@@ -722,7 +727,7 @@ h4 {
 
 #hostle .hostle_container .hostleContent .rightSide::after {
   content: "";
-  width: 450px;
+  width: 150%;
   height: 380px;
   background-color: #abc48c;
   position: absolute;
@@ -734,7 +739,7 @@ h4 {
   width: 100%;
   min-height: 100vh;
   padding-top: 50px;
-  background-color: #15222e;
+  background-color: #202b30;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -895,11 +900,15 @@ h4 {
 }
 
 #sitemap .container .leftSide .link a {
-  color: black;
+  color: #333333;
   font-size: 20px;
   line-height: 50px;
   font-weight: 600;
   padding: 0 10px;
+}
+
+#sitemap .container .leftSide .link a:hover {
+  color: #427f97;
 }
 
 #sitemap .container .rightSide {
@@ -910,7 +919,7 @@ h4 {
 
 #sitemap .container .rightSide .info {
   width: 60%;
-  border: 2px black solid;
+  border: 2px #333333 solid;
   margin: auto;
 }
 
@@ -923,8 +932,8 @@ h4 {
 
 #sitemap .container .rightSide .info .row .logo {
   width: 50%;
-  border-right: solid black 2px;
-  background-color: #004f77;
+  border-right: solid #333333 2px;
+  background-color: #427f97;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -934,7 +943,6 @@ h4 {
 }
 
 #sitemap .container .rightSide .info .row .logo img {
-  width: 70%;
   margin: auto;
 }
 
@@ -943,12 +951,12 @@ h4 {
 }
 
 #sitemap .container .rightSide .info .row .address h4 {
-  color: black;
+  color: #333333;
   font-size: 24px;
 }
 
 #sitemap .container .rightSide .info .socialmedia {
-  border-top: black solid 2px;
+  border-top: #333333 solid 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -970,7 +978,7 @@ h4 {
 
 footer {
   width: 100%;
-  background-color: #004f77;
+  background-color: #427f97;
   text-align: center;
 }
 
